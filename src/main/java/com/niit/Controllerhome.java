@@ -9,13 +9,13 @@ package com.niit;
 @Controller
 public class Controllerhome {
 	
-	@RequestMapping(value="/",method=RequestMethod.GET)
+	@RequestMapping("/")
 	public String showlandingpage()
 	{
-		return "wellcome";
+		return "index";
 	}
-   @RequestMapping(value="/lost",method=RequestMethod.GET)
-public String showwelcome(Model model)
+   @RequestMapping(value="/login",method=RequestMethod.GET)
+public String end(Model model)
 {
 	model.addAttribute("vikas", "Welcome to Spring Framework");
 	return "end";
